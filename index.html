@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Money</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <img src="assets/convert-money-logo.gif" alt="gif-money" class="gif">
+    <main class="wrapper">
+        <p class="convert-title">Converter <span class="convert-title-strong">de</span></p>
+        <select class="convert-from">
+            <option class="option-text"><span class="coin-symbol">R$</span> Real Brasileiro</option>
+        </select>
+
+        <p class="convert-title">Converter <span class="convert-title-strong">para</span></p>
+        <select class="convert-to">
+            <option class="option-text"><span class="coin-symbol">US$</span> Dólar Americano</option>
+            <option class="option-text"><span class="coin-symbol">€</span> Euro</option>
+        </select>
+
+        <label class="text-label">Valor</label>
+        <input class="input-value" placeholder="R$ 10.000,00">
+
+        <button class="convert-button button-effect">Converter</button>
+
+        <section class="coins">
+            <div class="brazil-info">
+                <img class="icon-brazil"src="assets/brazil-icon.png" alt="brazil-icon">
+                <h5 class="coin-title-brazil">Real</h5>
+                <h4 class="coin-value-brazil">R$ 0,00</h4>
+            </div>
+
+            <div class="arrow">
+                <img class="down-arrow" src="assets/down-arrow.png" alt="down-arrow">
+            </div>
+    
+            <div class="eua-info">
+                <img class="icon-eua"src="assets/eua-icon.png" alt="eua-icon">
+                <h5 class="coin-title-eua">Dólar</h5>
+                <h4 class="coin-value-eua">US$ 0,00</h4>     
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+.gif {
+    display: block;
+    margin: auto;
+    height: 280px;
+    padding: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 20px;
+    width: 400px;
+    margin: auto auto 25px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.convert-title {
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #777;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.convert-title-strong {
+    font-weight: 500;
+    color: #777777;
+}
+
+.convert-from {
+    margin-bottom: 18px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 2px #bbb;
+    color: #555555;
+    font-weight: 700;
+    appearance: none;
+    font-size: 15px;
+}
+
+.convert-to {
+    margin-bottom: 18px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 2px #bbb;
+    color: #555555;
+    font-weight: 700;
+    appearance: none;
+    font-size: 15px;
+}
+
+.text-label {
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #777777;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.input-value {
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    box-shadow: 1px 1px 2px #bbb;
+    color: #555555;
+    font-weight: 700;
+    padding: 12px 12px;
+    font-size: 15px;
+}
+
+.convert-button {
+    margin-bottom: 22px;
+    height: 48px;
+    background: #772fd3;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px #bbb;
+    cursor: pointer;
+}
+
+.coins {
+    display: block;
+    width: 360px;
+    border: 2px solid #772fd3;
+    border-radius: 20px;
+    margin: auto;
+    z-index:1;
+    padding: 10px 0px;
+}
+
+.brazil-info {
+    display: block;
+    text-align: center;
+}
+
+.eua-info {
+    display: block;
+    text-align: center;
+}
+
+.coin-title-brazil {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #777777;
+    margin-top: -5px;
+}
+
+.coin-title-eua {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #777777;
+    margin-top: -5px;
+}
+
+.coin-value-brazil {
+    font-size: 18px;
+    font-weight: 700;
+    color: #555555;
+    line-height: 18px;
+}
+
+.coin-value-eua {
+    font-size: 18px;
+    font-weight: 700;
+    color: #555555;
+    line-height: 18px;
+}
+
+.icon-brazil {
+    height: 50px;
+}
+
+.icon-eua {
+    height: 50px;
+}
+
+.arrow {
+    display: block;
+    text-align: center;
+    height: 50px;
+    margin: 13px 0px;
+}
+
+.down-arrow {
+    height: 50px;
+}
+
+.button-effect {
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-effect:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+.button-effect:active {
+    opacity: 0.6;
+}
