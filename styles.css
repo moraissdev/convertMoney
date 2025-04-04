@@ -180,17 +180,4 @@ body {
 
 .button-effect:active {
     opacity: 0.6;
-}
-
-@media screen and (max-width: 900px) {
-    .wrapper {
-    display: grid;
-    grid-template-columns: 16;
-    padding: 20px 15px;
-    width: auto;
-    margin: auto 12px 25px 12px;
-    background-color: #fff;
-    border-radius: 20px;
-}
-}
-    
+} 
