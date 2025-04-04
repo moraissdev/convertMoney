@@ -16,6 +16,8 @@
   <img src="https://skillicons.dev/icons?i=js" height="45" alt="javascript logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=figma" height="45" alt="figma logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=vscode" height="45" alt="vscode logo"  />
 </div>
 
 ###
