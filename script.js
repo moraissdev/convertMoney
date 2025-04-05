@@ -14,17 +14,18 @@ function convertMoney() {
     const dollarQuote = 5.8
     const euroQuote = 6.4
     const poundQuote = 7.5
+    const btcQuote = 490000
 
     if(selectCoin.value == "dolar") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("en-us", {
             style: "currency",
-            currency: "USD"
+            currency: "usd"
         }).format ((input / dollarQuote).toFixed(2))
     }
     if(selectCoin.value == "euro") { //SE O SELECT ESTIVER SELECIONADO EM EURO, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("de-de", {
             style: "currency",
-            currency: "EUR"  
+            currency: "eur"  
         }).format ((input / euroQuote).toFixed(2))
     }
     if(selectCoin.value == "libra") { //SE O SELECT ESTIVER SELECIONADO EM LIBRA, EXECUTA O QUE ESTÁ DENTRO
@@ -32,6 +33,12 @@ function convertMoney() {
             style: "currency",
             currency: "gbp"
         }).format((input / poundQuote).toFixed(2))
+    }
+    if(selectCoin.value == "bitcoin") {
+        anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
+            style: "currency",
+            currency: "btc"
+        }).format((input / btcQuote).toFixed(2))
     }
 
 
@@ -59,6 +66,10 @@ function changeSelect() {
     if (selectCoin.value == "libra") {
         changeCurrencySelect.innerHTML = "Libra"
         imgSelectCoin.src = "assets/libra-icon.png"
+    }
+    if(selectCoin.value == "bitcoin") {
+        changeCurrencySelect.innerHTML = "Bitcoin"
+        imgSelectCoin.src = "assets/bitcoin-icon.png"
     }
 
     convertMoney()
