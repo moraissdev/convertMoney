@@ -8,7 +8,6 @@ function convertMoney() {
     //CHAMAR OS ESPAÇOS QUE OS VALORES FICARÃO ALOCADOS APÓS A CONVERSÃO
     const brl = document.querySelector(".coin-value-brazil")
     const anotherCoins = document.querySelector(".coin-value-eua")
-
     //DECLARAR O VALOR DO DÓLAR PARA EFETUAR A DIVISÃO PARA CONVERTER
     const dolar = 5.8
 
