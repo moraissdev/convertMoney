@@ -16,8 +16,15 @@ function convertMoney() {
     const convertValue = input / dolar
 
     //SUBSTITUIR OS VALORES EMBAIXO DAS BANDEIRAS POR: VALOR DIGITADO E VALOR CONVERTIDO
-    brl.innerHTML = input
-    anotherCoins.innerHTML = convertValue.toFixed(2)
+    brl.innerHTML = new Intl.NumberFormat ("pt-br", {
+        style: "currency",
+        currency: "brl"
+    }).format(input)
+
+    anotherCoins.innerHTML = new Intl.NumberFormat("en-in", {
+        style: "currency",
+        currency: "USD"
+    }).format (convertValue.toFixed(2))
 
     //MOSTRAR NO CONSOLE O VALOR FINAL APÓS A DIVISÃO
     console.log(convertValue)
