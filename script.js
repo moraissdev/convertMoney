@@ -3,7 +3,7 @@ const button = document.querySelector(".convert-button")
 
 //FUNÇÃO QUE SERÁ EXECUTADA QUANDO HOUVER CLICK NO BOTÃO
 function convertMoney() {
-    //PEGAR SOMENTE O VALOR QUE SERÁ DIGITADO NO INPUT (.value)
+    //CHAMAR O INPUT PARA PEGAR SOMENTE O VALOR QUE SERÁ DIGITADO (.value)
     const input = document.querySelector(".input-value").value
 
     //DECLARAR O VALOR DO DÓLAR PARA EFETUAR A DIVISÃO PARA CONVERTER
