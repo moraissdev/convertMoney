@@ -5,6 +5,7 @@ const button = document.querySelector(".convert-button")
 function convertMoney() {
     //CHAMAR O INPUT PARA PEGAR SOMENTE O VALOR QUE SERÁ DIGITADO (.value)
     const input = document.querySelector(".input-value").value
+    //CHAMAR OS ESPÇAOS QUE OS VALORES FICARAM ALOCADOS APÓS A CONVERSÃO
     const brl = document.querySelector(".coin-value-brazil")
     const anotherCoins = document.querySelector(".coin-value-eua")
 
