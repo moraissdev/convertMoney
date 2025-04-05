@@ -21,7 +21,7 @@ function convertMoney() {
         currency: "brl"
     }).format(input)
 
-    anotherCoins.innerHTML = new Intl.NumberFormat("en-in", {
+    anotherCoins.innerHTML = new Intl.NumberFormat("en-us", {
         style: "currency",
         currency: "USD"
     }).format (convertValue.toFixed(2))
