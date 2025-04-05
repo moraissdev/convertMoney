@@ -14,9 +14,10 @@ function convertMoney() {
     //VALOR QUE FOI DIGITADO PELO USUÁRIO DIVIDIDO PELO VALOR ATRIBUÍDO AO DOLAR
     const convertValue = input / dolar
 
+    //SUBSTITUIR OS VALORES EMBAIXO DAS BANDEIRAS POR: VALOR DIGITADO E VALOR CONVERTIDO
     brl.innerHTML = input
     anotherCoins.innerHTML = convertValue
-    
+
     //MOSTRAR NA TELA/CONSOLE O VALOR FINAL APÓS A DIVISÃO
     console.log(convertValue)
 }
