@@ -44,7 +44,7 @@ function changeSelect() {
 
     if (selectCoin.value == "euro") {
         changeCurrencySelect.innerHTML = "Euro"
-        anotherCoins.innerHTML = "0,00 €"
+        anotherCoins.value = "0,00 €"
         imgSelectCoin.src = "assets/euro-icon.png"
     }
     if (selectCoin.value == "dolar") {
@@ -52,6 +52,8 @@ function changeSelect() {
         anotherCoins.innerHTML = "$0,00"
         imgSelectCoin.src = "assets/dolar-icon.png"
     }
+
+    convertMoney()
 }
 
 button.addEventListener("click",convertMoney)
