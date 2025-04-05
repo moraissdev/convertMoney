@@ -17,7 +17,7 @@ function convertMoney() {
 
     //SUBSTITUIR OS VALORES EMBAIXO DAS BANDEIRAS POR: VALOR DIGITADO E VALOR CONVERTIDO
     brl.innerHTML = input
-    anotherCoins.innerHTML = convertValue
+    anotherCoins.innerHTML = convertValue.toFixed(2)
 
     //MOSTRAR NO CONSOLE O VALOR FINAL APÓS A DIVISÃO
     console.log(convertValue)
