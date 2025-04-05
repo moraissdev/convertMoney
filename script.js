@@ -86,10 +86,46 @@ function changeSelect() {
     convertMoney()
 }
 
-const coinToConvert = document.querySelector(".convert-from")
-const input = document.querySelector(".input-value").value
-
 function convertCoin() {
+    const coinToConvert = document.querySelector(".convert-from")
+
+    const realToConvert = 5.8
+    const euroToConvert = 0.9
+    const dolarToConvert = 1
+    const libraToConvert = 0.78
+    const bitcoinToConvert = 83000
+
+    if(coinToConvert.value == "euroToConvert") {
+        brl.innerHTML = new Intl.NumberFormat("de-de", {
+            style: "currency",
+            currency: "eur"
+        }).format((input/ euroToConvert).toFixed(2))
+    }
+    if(coinToConvert.value == "bitcoinToConvert") {
+        brl.innerHTML = new Intl.NumberFormat("pt-br", {
+            style: "currency",
+            currency: "btc"
+        }).format((input / bitcoinToConvert).toFixed(2))
+    }
+    if(coinToConvert.value == "realToConvert") {
+        brl.innerHTML = new Intl.NumberFormat("pt-br", {
+            style: "currency",
+            currency: "brl"
+        }).format((input / realToConvert).toFixed(2))
+        
+    }
+    if(coinToConvert.value == "libraToConvert") {
+        brl.innerHTML = new Intl.NumberFormat("en-gb", {
+            style: "currency",
+            currency: "gbp"
+        }).format((input / libraToConvert).toFixed(2))
+    }
+    
+}
+
+const coinToConvert = document.querySelector(".convert-from")
+
+function convertSelectCoin() {
     const nameCoinSelectToConvert = document.querySelector(".coin-title-real")
     const imgCoinSelectToConvert = document.querySelector(".icon-real")
 
@@ -101,6 +137,7 @@ function convertCoin() {
         nameCoinSelectToConvert.innerHTML = "Dólar Americano"
         imgCoinSelectToConvert.src = "assets/dolar-icon.png"
     }
+
     if(coinToConvert.value == "bitcoinToConvert") {
         nameCoinSelectToConvert.innerHTML = "Bitcoin"
         imgCoinSelectToConvert.src = "assets/bitcoin-icon.png"
@@ -113,31 +150,12 @@ function convertCoin() {
         nameCoinSelectToConvert.innerHTML = "Libra Esterlina"
         imgCoinSelectToConvert.src = "assets/libra-icon.png"
     }
-}
-
-function converCoin() {
-    const coinToConvert = document.querySelector(".convert-from")
-    const brl = document.querySelector(".coin-value-real")
-
-    if(coinToConvert.value == "euroToConvert") {
-
-    }
-    if(coinToConvert.value == "dolarToConvert") {
-        
-    }
-    if(coinToConvert.value == "bitcoinToConvert") {
-        
-    }
-    if(coinToConvert.value == "realToConvert") {
-        
-    }
-    if(coinToConvert.value == "libraToConvert") {
-        
-    }
-
+    
+    convertCoin()
 }
     
 
-coinToConvert.addEventListener("change", convertCoin)
+button.addEventListener("click", convertCoin)
 button.addEventListener("click", convertMoney)
 selectCoin.addEventListener("change", changeSelect)
+coinToConvert.addEventListener("change", convertSelectCoin)
