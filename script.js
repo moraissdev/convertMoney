@@ -88,37 +88,33 @@ function changeSelect() {
 
 function convertCoin() {
     const coinToConvert = document.querySelector(".convert-from")
+    const brl = document.querySelector(".coin-value-real")
 
-    const realToConvert = 5.8
-    const euroToConvert = 0.9
-    const dolarToConvert = 1
-    const libraToConvert = 0.78
-    const bitcoinToConvert = 83000
 
     if(coinToConvert.value == "euroToConvert") {
         brl.innerHTML = new Intl.NumberFormat("de-de", {
             style: "currency",
             currency: "eur"
-        }).format((input/ euroToConvert).toFixed(2))
+        })
     }
     if(coinToConvert.value == "bitcoinToConvert") {
         brl.innerHTML = new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "btc"
-        }).format((input / bitcoinToConvert).toFixed(2))
+        })
     }
     if(coinToConvert.value == "realToConvert") {
         brl.innerHTML = new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "brl"
-        }).format((input / realToConvert).toFixed(2))
+        })
         
     }
     if(coinToConvert.value == "libraToConvert") {
         brl.innerHTML = new Intl.NumberFormat("en-gb", {
             style: "currency",
             currency: "gbp"
-        }).format((input / libraToConvert).toFixed(2))
+        }).format((input) | (input / libraToConvert).toFixed(2))
     }
     
 }
