@@ -37,4 +37,20 @@ function convertMoney() {
 
 }
 
+function changeSelect() {
+    const changeCurrencySelect = document.querySelector(".coin-title-eua")
+    const anotherCoins = document.querySelector(".coin-value-eua")
+
+    if (selectCoin.value == "euro") {
+        changeCurrencySelect.innerHTML = "Euro"
+        anotherCoins.innerHTML = "0,00 €"
+
+    }
+    if (selectCoin.value == "dolar") {
+        changeCurrencySelect.innerHTML = "Dólar"
+        anotherCoins.innerHTML = "$0,00"
+    }
+}
+
 button.addEventListener("click",convertMoney)
+selectCoin.addEventListener("change", changeSelect)
