@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert Money</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <img src="assets/conversor money logo 2.png" alt="gif-money" class="img">
@@ -17,12 +16,12 @@
 
         <p class="convert-title">Converter <span class="convert-title-strong">para</span></p>
         <select class="convert-to">
-            <option>US$ Dólar Americano</option>
-            <option>€ Euro</option>
+            <option value="dolar">US$ Dólar Americano</option>
+            <option value="Euro">€ Euro</option>
         </select>
 
         <label class="text-label">Valor</label>
-        <input class="input-value" placeholder="R$ 10.000,00" type="text">
+        <input class="input-value" placeholder="R$ 10.000,00" type="number">
 
         <button class="convert-button button-effect">Converter</button>
 
@@ -44,5 +43,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
