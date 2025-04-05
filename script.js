@@ -14,16 +14,13 @@ function convertMoney() {
     const dollarQuote = 5.8
     const euroQuote = 6.4
 
-    //VALOR QUE FOI DIGITADO PELO USUÁRIO DIVIDIDO PELO VALOR ATRIBUÍDO AO DOLAR
-    //const convertValue = input / dollarQuote
-
-    if(selectCoin.value == "dolar") { //PRA MUDAR DEPENDENDO DO SELECT USADO (DOLAR OR EURO)
+    if(selectCoin.value == "dolar") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("en-us", {
             style: "currency",
             currency: "USD"
         }).format ((input / dollarQuote).toFixed(2))
     }
-    if(selectCoin.value == "euro") {
+    if(selectCoin.value == "euro") { //SE O SELECT ESTIVER SELECIONADO EM EURO, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("de-de", {
             style: "currency",
             currency: "EUR"  
