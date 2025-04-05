@@ -13,6 +13,7 @@ function convertMoney() {
     //DECLARAR O VALOR DO DÓLAR PARA EFETUAR A DIVISÃO PARA CONVERTER
     const dollarQuote = 5.8
     const euroQuote = 6.4
+    const poundQuote = 7.5
 
     if(selectCoin.value == "dolar") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("en-us", {
@@ -25,6 +26,12 @@ function convertMoney() {
             style: "currency",
             currency: "EUR"  
         }).format ((input / euroQuote).toFixed(2))
+    }
+    if(selectCoin.value == "libra") { //SE O SELECT ESTIVER SELECIONADO EM LIBRA, EXECUTA O QUE ESTÁ DENTRO
+        anotherCoins.innerHTML = new Intl.NumberFormat("en-gb", {
+            style: "currency",
+            currency: "gbp"
+        }).format((input / poundQuote).toFixed(2))
     }
 
 
@@ -48,6 +55,10 @@ function changeSelect() {
     if (selectCoin.value == "dolar") {
         changeCurrencySelect.innerHTML = "Dólar"
         imgSelectCoin.src = "assets/dolar-icon.png"
+    }
+    if (selectCoin.value == "libra") {
+        changeCurrencySelect.innerHTML = "Libra"
+        imgSelectCoin.src = "assets/libra-icon.png"
     }
 
     convertMoney()
