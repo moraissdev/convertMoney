@@ -108,26 +108,26 @@ body {
     padding: 10px 0px;
 }
 
-.brazil-info, .eua-info {
+.real-info, .dolar-info {
     display: block;
     text-align: center;
 }
 
-.coin-title-brazil, .coin-title-eua {
+.coin-title-real, .coin-title-dolar {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     color: #777777;
 }
 
-.coin-value-brazil, .coin-value-eua {
+.coin-value-real, .coin-value-dolar {
     font-size: 18px;
     font-weight: 700;
     color: #555555;
     line-height: 18px;
 }
 
-.icon-brazil, .icon-eua {
+.icon-real, .icon-dolar {
     height: 50px;
 }
 
