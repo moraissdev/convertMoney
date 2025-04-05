@@ -5,6 +5,8 @@ const button = document.querySelector(".convert-button")
 function convertMoney() {
     //CHAMAR O INPUT PARA PEGAR SOMENTE O VALOR QUE SERÁ DIGITADO (.value)
     const input = document.querySelector(".input-value").value
+    const brl = document.querySelector(".coin-value-brazil")
+    const anotherCoins = document.querySelector(".coin-value-eua")
 
     //DECLARAR O VALOR DO DÓLAR PARA EFETUAR A DIVISÃO PARA CONVERTER
     const dolar = 5.8
@@ -12,6 +14,9 @@ function convertMoney() {
     //VALOR QUE FOI DIGITADO PELO USUÁRIO DIVIDIDO PELO VALOR ATRIBUÍDO AO DOLAR
     const convertValue = input / dolar
 
+    brl.innerHTML = input
+    anotherCoins.innerHTML = convertValue
+    
     //MOSTRAR NA TELA/CONSOLE O VALOR FINAL APÓS A DIVISÃO
     console.log(convertValue)
 }
