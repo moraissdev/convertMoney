@@ -39,17 +39,14 @@ function convertMoney() {
 
 function changeSelect() {
     const changeCurrencySelect = document.querySelector(".coin-title-dolar")
-    const anotherCoins = document.querySelector(".coin-value-dolar")
     const imgSelectCoin = document.querySelector(".icon-dolar")
 
     if (selectCoin.value == "euro") {
         changeCurrencySelect.innerHTML = "Euro"
-        anotherCoins.value = "0,00 €"
         imgSelectCoin.src = "assets/euro-icon.png"
     }
     if (selectCoin.value == "dolar") {
         changeCurrencySelect.innerHTML = "Dólar"
-        anotherCoins.innerHTML = "$0,00"
         imgSelectCoin.src = "assets/dolar-icon.png"
     }
 
