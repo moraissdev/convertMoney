@@ -36,10 +36,10 @@ function convertMoney() {
         }).format((input / poundQuote).toFixed(2))
     }
     if (selectCoin.value == "bitcoin") {
-        anotherCoins.innerHTML = Number(input / btcQuote).toLocaleString("en-US", {
+        anotherCoins.innerHTML = "₿" + Number(input / btcQuote).toLocaleString("en-US", {
             minimumFractionDigits: 8,
             maximumFractionDigits: 8
-        }) + " BTC";
+        })
     }
     if(selectCoin.value == "real") {
         anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
