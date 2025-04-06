@@ -157,6 +157,7 @@ body {
     border-radius: 10px;
     color: white;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .text-avise {
