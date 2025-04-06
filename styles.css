@@ -16,8 +16,8 @@ body {
 .img {
     display: block;
     margin: auto;
-    height: 250px;
-    padding: 15px;
+    height: 240px;
+    padding: 18px;
 }
 
 .wrapper {
@@ -171,7 +171,7 @@ footer {
     border-radius: 25px;
     background: #8A51FC;
     color: #fff;
-    margin-top: 5px;
+    margin-top: 7px;
     font-weight: 300;
     cursor: pointer;
     font-size: 14px;
