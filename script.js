@@ -1,6 +1,6 @@
 //CHAMAR O BOTÃO  
-const button = document.querySelector(".convert-button")
-const selectCoin = document.querySelector(".convert-to")
+const buttonToConvert = document.querySelector(".convert-button")
+const selectCurrencyToConvert = document.querySelector(".convert-to")
 
 //FUNÇÃO QUE SERÁ EXECUTADA QUANDO HOUVER CLICK NO BOTÃO
 function convertMoney() {
@@ -17,31 +17,31 @@ function convertMoney() {
     const poundQuote = 7.5
     const btcQuote = 490000
 
-    if(selectCoin.value == "dolar") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
+    if(selectCurrencyToConvert.value == "dolar") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("en-us", {
             style: "currency",
             currency: "usd"
         }).format ((input / dollarQuote).toFixed(2))
     }
-    if(selectCoin.value == "euro") { //SE O SELECT ESTIVER SELECIONADO EM EURO, EXECUTA O QUE ESTÁ DENTRO
+    if(selectCurrencyToConvert.value == "euro") { //SE O SELECT ESTIVER SELECIONADO EM EURO, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("de-de", {
             style: "currency",
             currency: "eur"  
         }).format ((input / euroQuote).toFixed(2))
     }
-    if(selectCoin.value == "libra") { //SE O SELECT ESTIVER SELECIONADO EM LIBRA, EXECUTA O QUE ESTÁ DENTRO
+    if(selectCurrencyToConvert.value == "libra") { //SE O SELECT ESTIVER SELECIONADO EM LIBRA, EXECUTA O QUE ESTÁ DENTRO
         anotherCoins.innerHTML = new Intl.NumberFormat("en-gb", {
             style: "currency",
             currency: "gbp"
         }).format((input / poundQuote).toFixed(2))
     }
-    if (selectCoin.value == "bitcoin") {
+    if (selectCurrencyToConvert.value == "bitcoin") {
         anotherCoins.innerHTML = "₿" + Number(input / btcQuote).toLocaleString("en-US", {
             minimumFractionDigits: 8,
             maximumFractionDigits: 8
         })
     }
-    if(selectCoin.value == "real") {
+    if(selectCurrencyToConvert.value == "real") {
         anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "brl"
@@ -58,33 +58,33 @@ function convertMoney() {
 
 }
 
-function changeSelect() {
-    const changeCurrencySelect = document.querySelector(".coin-title-dolar")
-    const imgSelectCoin = document.querySelector(".icon-dolar")
+function changeCurrencyConverted() {
+    const convertedCurrencyName = document.querySelector(".coin-title-dolar")
+    const convertedCurrencImage = document.querySelector(".icon-dolar")
 
-    if (selectCoin.value == "euro") {
-        changeCurrencySelect.innerHTML = "Euro"
-        imgSelectCoin.src = "assets/euro-icon.png"
+    if (selectCurrencyToConvert.value == "euro") {
+        convertedCurrencyName.innerHTML = "Euro"
+        convertedCurrencImage.src = "assets/euro-icon.png"
     }
-    if (selectCoin.value == "dolar") {
-        changeCurrencySelect.innerHTML = "Dólar Americano"
-        imgSelectCoin.src = "assets/dolar-icon.png"
+    if (selectCurrencyToConvert.value == "dolar") {
+        convertedCurrencyName.innerHTML = "Dólar Americano"
+        convertedCurrencImage.src = "assets/dolar-icon.png"
     }
-    if (selectCoin.value == "libra") {
-        changeCurrencySelect.innerHTML = "Libra Esterlina"
-        imgSelectCoin.src = "assets/libra-icon.png"
+    if (selectCurrencyToConvert.value == "libra") {
+        convertedCurrencyName.innerHTML = "Libra Esterlina"
+        convertedCurrencImage.src = "assets/libra-icon.png"
     }
-    if(selectCoin.value == "bitcoin") {
-        changeCurrencySelect.innerHTML = "Bitcoin"
-        imgSelectCoin.src = "assets/bitcoin-icon.png"
+    if(selectCurrencyToConvert.value == "bitcoin") {
+        convertedCurrencyName.innerHTML = "Bitcoin"
+        convertedCurrencImage.src = "assets/bitcoin-icon.png"
     }
-    if(selectCoin.value == "real") {
-        changeCurrencySelect.innerHTML = "Real"
-        imgSelectCoin.src = "assets/real-icon.png"
+    if(selectCurrencyToConvert.value == "real") {
+        convertedCurrencyName.innerHTML = "Real"
+        convertedCurrencImage.src = "assets/real-icon.png"
     }
 
     convertMoney()
 }
 
-button.addEventListener("click", convertMoney)
-selectCoin.addEventListener("change", changeSelect)
+buttonToConvert.addEventListener("click", convertMoney)
+selectCurrencyToConvert.addEventListener("change", changeCurrencyConverted)
