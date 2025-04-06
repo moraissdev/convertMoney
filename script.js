@@ -181,8 +181,8 @@ function priceLive() {
     if(selectCurrencyToConvert.value =="dolarCanadense"){
         priceBelowButton.textContent = "0.24 CAD"
     }
-    if(selectCurrencyToConvert.value =="rea"){
-        priceBelowButton.textContent = "1 BRL"
+    if(selectCurrencyToConvert.value =="dolarAmericano"){
+        priceBelowButton.textContent = "0.17 USD"
     }
 }
 
