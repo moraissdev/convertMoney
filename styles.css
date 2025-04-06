@@ -55,6 +55,7 @@ body {
     box-shadow: 1px 1px 2px #bbb;
     color: #555555;
     font-weight: 700;
+    appearance: auto;
     font-size: 15px;
     background: #fff;
 }
