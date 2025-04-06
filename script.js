@@ -101,51 +101,51 @@ function convertMoney() {
 
 function changeCurrencyConverted() {
     const convertedCurrencyName = document.querySelector(".coin-title-dolar")
-    const convertedCurrencImage = document.querySelector(".icon-dolar")
+    const convertedCurrencyImage = document.querySelector(".icon-dolar")
 
     if (selectCurrencyToConvert.value == "euro") {
         convertedCurrencyName.innerHTML = "Euro"
-        convertedCurrencImage.src = "assets/euro-icon.png"
+        convertedCurrencyImage.src = "assets/euro-icon.png"
     }
     if (selectCurrencyToConvert.value == "dolarAmericano") {
         convertedCurrencyName.innerHTML = "Dólar Americano"
-        convertedCurrencImage.src = "assets/dolar-icon.png"
+        convertedCurrencyImage.src = "assets/dolar-icon.png"
     }
     if (selectCurrencyToConvert.value == "libra") {
         convertedCurrencyName.innerHTML = "Libra Esterlina"
-        convertedCurrencImage.src = "assets/libra-icon.png"
+        convertedCurrencyImage.src = "assets/libra-icon.png"
     }
     if(selectCurrencyToConvert.value == "bitcoin") {
         convertedCurrencyName.innerHTML = "Bitcoin"
-        convertedCurrencImage.src = "assets/bitcoin-icon.png"
+        convertedCurrencyImage.src = "assets/bitcoin-icon.png"
     }
     if(selectCurrencyToConvert.value == "real") {
         convertedCurrencyName.innerHTML = "Real"
-        convertedCurrencImage.src = "assets/real-icon.png"
+        convertedCurrencyImage.src = "assets/real-icon.png"
     }
     if(selectCurrencyToConvert.value == "dolarCanadense") {
-        convertedCurrencImage.src = "assets/cad-icon.png"
+        convertedCurrencyImage.src = "assets/cad-icon.png"
         convertedCurrencyName.innerHTML = "Dólar Canadense"
     }
     if(selectCurrencyToConvert.value == "pesoColombiano") {
-        convertedCurrencImage.src = "assets/cop-icon.png"
+        convertedCurrencyImage.src = "assets/cop-icon.png"
         convertedCurrencyName.innerHTML = "Peso Colombiano"
     }
     if(selectCurrencyToConvert.value == "pesoArgentino") {
-        convertedCurrencImage.src = "assets/ars-icon.png"
+        convertedCurrencyImage.src = "assets/ars-icon.png"
         convertedCurrencyName.innerHTML = "Peso Argentino"
     }
     if(selectCurrencyToConvert.value == "pesoMexicano") {
-        convertedCurrencImage.src = "assets/mxn-icon.png"
+        convertedCurrencyImage.src = "assets/mxn-icon.png"
         convertedCurrencyName.innerHTML = "Peso Mexicano"
     }
     if(selectCurrencyToConvert.value == "ieneJapones") {
-        convertedCurrencImage.src = "assets/jpy-icon.png"
+        convertedCurrencyImage.src = "assets/jpy-icon.png"
         convertedCurrencyName.innerHTML = "Iene Japonês"
     }
     if(selectCurrencyToConvert.value == "ethereum") {
-        convertedCurrencImage.src = "assets/ethereum-icon.png"
-        convertedCurrencImage.innerHTML = "Ethereum"
+        convertedCurrencyImage.src = "assets/ethereum-icon.png"
+        convertedCurrencyName.innerHTML = "Ethereum"
     }
 
     convertMoney()
