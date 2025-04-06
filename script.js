@@ -15,12 +15,13 @@ function convertMoney() {
     const dollarQuote = 0.1712
     const euroQuote = 0.1562
     const poundQuote = 0.1327
-    const bitcoinQuote = 490000
+    const bitcoinQuote = 0.0000020789
     const pesoArgentinoQuote = 183.8
     const dolarCanadenseQuote = 0.2436
     const ieneJaponesQuote = 25.16
     const pesoColombianoQuote = 732.9
     const pesoMexicanoQuote = 3.497
+    const ethereumQuote = 0.000096107
 
     if(selectCurrencyToConvert.value == "dolarAmericano") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("en-us", {
@@ -41,10 +42,10 @@ function convertMoney() {
         }).format((inputValueEntered * poundQuote).toFixed(2)) + " GBP"
     }
     if (selectCurrencyToConvert.value == "bitcoin") {
-        splitValueAfterOperation.innerHTML = "₿" + Number(inputValueEntered / bitcoinQuote).toLocaleString("en-US", {
+        splitValueAfterOperation.innerHTML = "₿" + Number(inputValueEntered * bitcoinQuote).toLocaleString("en-US", {
             minimumFractionDigits: 8,
             maximumFractionDigits: 8
-        })
+        }) + " BTC"
     }
     if(selectCurrencyToConvert.value == "real") {
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("pt-br", {
@@ -81,6 +82,12 @@ function convertMoney() {
             style: "currency",
             currency: "mxn"
         }).format((inputValueEntered * pesoMexicanoQuote).toFixed(2)) + " MXN"
+    }
+    if(selectCurrencyToConvert.value == "ethereum") {
+        splitValueAfterOperation.innerHTML = "Ξ" + Number(inputValueEntered * ethereumQuote).toLocaleString("en-US", {
+            minimumFractionDigits: 8,
+            maximumFractionDigits: 8
+    }) + " ETH"
     }
 
 
@@ -135,6 +142,10 @@ function changeCurrencyConverted() {
     if(selectCurrencyToConvert.value == "ieneJapones") {
         convertedCurrencImage.src = "assets/jpy-icon.png"
         convertedCurrencyName.innerHTML = "Iene Japonês"
+    }
+    if(selectCurrencyToConvert.value == "ethereum") {
+        convertedCurrencImage.src = "assets/ethereum-icon.png"
+        convertedCurrencImage.innerHTML = "Ethereum"
     }
 
     convertMoney()
