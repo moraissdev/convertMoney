@@ -143,12 +143,12 @@ body {
 .gif-div {
     display: block;
     text-align: center;
-    height: 55px;
-    margin: 8px 0px;
+    height: 58px;
+    margin: 5px 0px;
 }
 
 .gif {
-    height: 55px;
+    height: 58px;
 }
 
 .warning {
