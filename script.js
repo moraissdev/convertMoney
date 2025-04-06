@@ -21,19 +21,19 @@ function convertMoney() {
         splitValueOutput.innerHTML = new Intl.NumberFormat("en-us", {
             style: "currency",
             currency: "usd"
-        }).format ((inputValueEntered / dollarQuote).toFixed(2))
+        }).format ((inputValueEntered / dollarQuote).toFixed(2)) + " USD"
     }
     if(selectCurrencyToConvert.value == "euro") { //SE O SELECT ESTIVER SELECIONADO EM EURO, EXECUTA O QUE ESTÁ DENTRO
-        splitValueOutput.innerHTML = new Intl.NumberFormat("de-de", {
+        splitValueOutput.innerHTML = new Intl.NumberFormat("en-ie", {
             style: "currency",
             currency: "eur"  
-        }).format ((inputValueEntered / euroQuote).toFixed(2))
+        }).format ((inputValueEntered / euroQuote).toFixed(2)) + " EUR"
     }
     if(selectCurrencyToConvert.value == "libra") { //SE O SELECT ESTIVER SELECIONADO EM LIBRA, EXECUTA O QUE ESTÁ DENTRO
         splitValueOutput.innerHTML = new Intl.NumberFormat("en-gb", {
             style: "currency",
             currency: "gbp"
-        }).format((inputValueEntered / poundQuote).toFixed(2))
+        }).format((inputValueEntered / poundQuote).toFixed(2)) + " GBP"
     }
     if (selectCurrencyToConvert.value == "bitcoin") {
         splitValueOutput.innerHTML = "₿" + Number(inputValueEntered / bitcoinQuote).toLocaleString("en-US", {
@@ -45,7 +45,7 @@ function convertMoney() {
         splitValueOutput.innerHTML = new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "brl"
-        }).format((inputValueEntered / realQuote).toFixed(2))
+        }).format((inputValueEntered / realQuote).toFixed(2)) + " BRL"
     }
 
 
@@ -54,7 +54,7 @@ function convertMoney() {
     defaultValueInReal.innerHTML = new Intl.NumberFormat ("pt-br", {
         style: "currency",
         currency: "brl"
-    }).format(inputValueEntered)
+    }).format(inputValueEntered) + " BRL"
 
 }
 
