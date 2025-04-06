@@ -140,15 +140,15 @@ body {
     height: 50px;
 }
 
-.arrow {
+.gif-div {
     display: block;
     text-align: center;
-    height: 42px;
-    margin: 13px 0px;
+    height: 55px;
+    margin: 8px 0px;
 }
 
-.down-arrow {
-    height: 42px;
+.gif {
+    height: 55px;
 }
 
 .warning {
