@@ -102,7 +102,7 @@ body {
 .coins {
     display: block;
     width: 95%;
-    border: 2px solid #772fd3;
+    border: 1px solid #772fd3;
     border-radius: 20px;
     margin: auto;
     z-index:1;
