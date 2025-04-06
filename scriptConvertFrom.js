@@ -39,8 +39,7 @@ function convertMoney() {
         anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
             style: "currency",
             currency: "btc"
-        }).format((input / btcQuote).toFixed(6)
-        ))
+        }).format((input / btcQuote).toFixed(2))
     }
     if(selectCoin.value == "real") {
         anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
