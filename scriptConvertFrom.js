@@ -35,12 +35,6 @@ function convertMoney() {
             currency: "gbp"
         }).format((input / poundQuote).toFixed(2))
     }
-    if(selectCoin.value == "bitcoin") {
-        anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
-            style: "currency",
-            currency: "btc"
-        }).format((input / btcQuote).toFixed(2))
-    }
     if(selectCoin.value == "real") {
         anotherCoins.innerHTML = new Intl.NumberFormat("pt-br", {
             style: "currency",
@@ -73,10 +67,6 @@ function changeSelect() {
     if (selectCoin.value == "libra") {
         changeCurrencySelect.innerHTML = "Libra Esterlina"
         imgSelectCoin.src = "assets/libra-icon.png"
-    }
-    if(selectCoin.value == "bitcoin") {
-        changeCurrencySelect.innerHTML = "Bitcoin"
-        imgSelectCoin.src = "assets/bitcoin-icon.png"
     }
     if(selectCoin.value == "real") {
         changeCurrencySelect.innerHTML = "Real"
