@@ -151,5 +151,41 @@ function changeCurrencyConverted() {
     convertMoney()
 }
 
+function priceLive() {
+    const priceBelowButton = document.querySelector(".price-live")
+
+    if(selectCurrencyToConvert.value == "euro"){
+        priceBelowButton.textContent = "0.16 EUR"
+    }
+    if(selectCurrencyToConvert.value =="libra"){
+        priceBelowButton.textContent = "0.13 GBP"
+    }
+    if(selectCurrencyToConvert.value =="pesoArgentino"){
+        priceBelowButton.textContent = "183,80 ARS"
+    }
+    if(selectCurrencyToConvert.value =="pesoColombiano"){
+        priceBelowButton.textContent = "732,90 COP"
+    }
+    if(selectCurrencyToConvert.value =="pesoMexicano"){
+        priceBelowButton.textContent = "3.50 MXN"
+    }
+    if(selectCurrencyToConvert.value =="bitcoin"){
+        priceBelowButton.textContent = "0.00000208 BTC"
+    }
+    if(selectCurrencyToConvert.value =="ethereum"){
+        priceBelowButton.textContent = "0.00009611 ETH"
+    }
+    if(selectCurrencyToConvert.value =="ieneJapones"){
+        priceBelowButton.textContent = "25 JPY"
+    }
+    if(selectCurrencyToConvert.value =="dolarCanadense"){
+        priceBelowButton.textContent = "0.24 CAD"
+    }
+    if(selectCurrencyToConvert.value =="rea"){
+        priceBelowButton.textContent = "1 BRL"
+    }
+}
+
 buttonToConvert.addEventListener("click", convertMoney)
 selectCurrencyToConvert.addEventListener("change", changeCurrencyConverted)
+selectCurrencyToConvert.addEventListener("change", priceLive)
