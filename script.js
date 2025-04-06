@@ -154,9 +154,6 @@ function changeCurrencyConverted() {
 function priceLive() {
     const priceBelowButton = document.querySelector(".price-live")
 
-    if(selectCurrencyToConvert.value = "dolarAmericano"){
-        priceBelowButton.textContent = "0.17 USD"
-    }
     if(selectCurrencyToConvert.value == "euro"){
         priceBelowButton.textContent = "0.16 EUR"
     }
