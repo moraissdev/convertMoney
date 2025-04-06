@@ -150,3 +150,15 @@ body {
     transform: translateY(-3px);
     opacity: 0.8;
 }
+
+footer {
+    display: block;
+    margin:auto;
+    margin-top: 18px;
+}
+
+.credits {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+}
