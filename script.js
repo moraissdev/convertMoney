@@ -12,33 +12,33 @@ function convertMoney() {
 
     //DECLARAR O VALOR DO DÓLAR PARA EFETUAR A DIVISÃO PARA CONVERTER
     const realQuote = 1
-    const dollarQuote = 5.8
-    const euroQuote = 6.4
-    const poundQuote = 7.5
+    const dollarQuote = 0.1712
+    const euroQuote = 0.1562
+    const poundQuote = 0.1327
     const bitcoinQuote = 490000
-    const pesoArgentinoQuote = 184
-    const dolarCanadenseQuote = 0.24
-    const ieneJaponesQuote = 25
-    const pesoColombianoQuote = 733
-    const pesoMexicanoQuote = 3.5
+    const pesoArgentinoQuote = 183.8
+    const dolarCanadenseQuote = 0.2436
+    const ieneJaponesQuote = 25.16
+    const pesoColombianoQuote = 732.9
+    const pesoMexicanoQuote = 3.497
 
     if(selectCurrencyToConvert.value == "dolarAmericano") { //SE O SELECT ESTIVER SELECIONADO EM DÓLAR, EXECUTA O QUE ESTÁ DENTRO
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("en-us", {
             style: "currency",
             currency: "usd"
-        }).format ((inputValueEntered / dollarQuote).toFixed(2)) + " USD"
+        }).format ((inputValueEntered * dollarQuote).toFixed(2)) + " USD"
     }
     if(selectCurrencyToConvert.value == "euro") { //SE O SELECT ESTIVER SELECIONADO EM EURO, EXECUTA O QUE ESTÁ DENTRO
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("en-ie", {
             style: "currency",
-            currency: "eur"  
-        }).format ((inputValueEntered / euroQuote).toFixed(2)) + " EUR"
+            currency: "eur"
+        }).format ((inputValueEntered * euroQuote).toFixed(2)) + " EUR"
     }
     if(selectCurrencyToConvert.value == "libra") { //SE O SELECT ESTIVER SELECIONADO EM LIBRA, EXECUTA O QUE ESTÁ DENTRO
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("en-gb", {
             style: "currency",
             currency: "gbp"
-        }).format((inputValueEntered / poundQuote).toFixed(2)) + " GBP"
+        }).format((inputValueEntered * poundQuote).toFixed(2)) + " GBP"
     }
     if (selectCurrencyToConvert.value == "bitcoin") {
         splitValueAfterOperation.innerHTML = "₿" + Number(inputValueEntered / bitcoinQuote).toLocaleString("en-US", {
@@ -62,7 +62,7 @@ function convertMoney() {
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("en-ca", {
             style: "currency",
             currency: "cad"
-        }).format((inputValueEntered / dolarCanadenseQuote).toFixed(2)) + " CAD"
+        }).format((inputValueEntered * dolarCanadenseQuote).toFixed(2)) + " CAD"
     }
     if(selectCurrencyToConvert.value == "ieneJapones") {
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("ja-jp", {
@@ -80,7 +80,7 @@ function convertMoney() {
         splitValueAfterOperation.innerHTML = new Intl.NumberFormat("es-mx", {
             style: "currency",
             currency: "mxn"
-        }).format((inputValueEntered * pesoMexicanoQuote).toFixed(2)) + "MXN"
+        }).format((inputValueEntered * pesoMexicanoQuote).toFixed(2)) + " MXN"
     }
 
 
