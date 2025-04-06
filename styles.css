@@ -16,14 +16,14 @@ body {
 .img {
     display: block;
     margin: auto;
-    height: 240px;
+    height: 235px;
     padding: 18px;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 25px 18px;
+    padding: 20px 18px;
     width: 385px;
     margin: auto auto 25px auto;
     background-color: #ffffff;
@@ -156,6 +156,7 @@ body {
     width: 16px;
     border-radius: 10px;
     color: white;
+    font-weight: 900;
     margin-right: 5px;
     cursor: default;
 }
@@ -178,7 +179,7 @@ body {
 footer {
     display: block;
     margin:auto;
-    margin-top: 13px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -194,7 +195,7 @@ footer {
     border-radius: 25px;
     background: #8A51FC;
     color: #fff;
-    margin-top: 5px;
+    margin-top: 7px;
     font-weight: 300;
     cursor: pointer;
     font-size: 13px;
