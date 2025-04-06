@@ -160,7 +160,7 @@ body {
     cursor: default;
 }
 
-.text-avise {
+.warning-text {
     font-size: 10px;
     color: #777;
     opacity: 0.8;
