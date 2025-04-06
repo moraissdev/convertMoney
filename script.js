@@ -7,7 +7,7 @@ function convertMoney() {
     //CHAMAR O INPUT PARA PEGAR SOMENTE O VALOR QUE SERÁ DIGITADO (.value)
     const inputValueEntered = document.querySelector(".input-value").value
     //CHAMAR OS ESPAÇOS QUE OS VALORES FICARÃO ALOCADOS APÓS A CONVERSÃO
-    const brl = document.querySelector(".coin-value-real")
+    const defaultValueInReal = document.querySelector(".coin-value-real")
     const splitValueOutput = document.querySelector(".coin-value-dolar")
 
     //DECLARAR O VALOR DO DÓLAR PARA EFETUAR A DIVISÃO PARA CONVERTER
@@ -51,7 +51,7 @@ function convertMoney() {
 
 
     //SUBSTITUIR OS VALORES EMBAIXO DAS BANDEIRAS POR: VALOR DIGITADO E VALOR CONVERTIDO
-    brl.innerHTML = new Intl.NumberFormat ("pt-br", {
+    defaultValueInReal.innerHTML = new Intl.NumberFormat ("pt-br", {
         style: "currency",
         currency: "brl"
     }).format(inputValueEntered)
