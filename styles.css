@@ -193,6 +193,7 @@ footer {
 }
 
 .repository {
+    display: none;
     border: none;
     padding: 5px 16px;
     border-radius: 25px;
