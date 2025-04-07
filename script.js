@@ -1,6 +1,6 @@
 //CHAMAR O BOTÃO  
-const buttonToConvert = document.querySelector(".convert-button")
-const selectCurrencyToConvert = document.querySelector(".convert-to")
+const buttonToConvert = document.querySelector(".convert-button") //EVENTO CLICK
+const selectCurrencyToConvert = document.querySelector(".convert-to") //EVENTO CHANGE
 
 //FUNÇÃO QUE SERÁ EXECUTADA QUANDO HOUVER CLICK NO BOTÃO
 function convertMoney() {
