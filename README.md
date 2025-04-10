@@ -2,7 +2,7 @@
 
 ###
 
-<p align="center">Projeto proposto no Dev Club (meu primeiro desenvolvido em JavaScript). Futuramente, pretendo integrar uma API para obter a cotação em tempo real do mercado.</p>
+<p align="center">Projeto proposto no Dev Club (meu primeiro projeto desenvolvido em JavaScript). Futuramente, pretendo integrar uma API para obter a cotação em tempo real do mercado.</p>
 
 ###
 
