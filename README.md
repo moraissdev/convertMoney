@@ -6,7 +6,7 @@
 
 ###
 
-<h3 align="center">💻 Notebook e PC:</h3>
+<h3 align="center"> Notebook e PC:</h3>
 
 ###
 
