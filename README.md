@@ -6,6 +6,10 @@
 
 ###
 
+<h3 align="left">💻 Notebook e PC:</h3>
+
+###
+
 <div align="center">
   <img height="400" src="https://i.imgur.com/09Aja0O.png"  />
 </div>
