@@ -24,7 +24,7 @@
 
 ###
 
-<h3 align="left">🌐 Site Responsivo para Web & Mobile:</h3>
+<h3 align="left">🌐 Site Responsivo para Mobile:</h3>
 
 ###
 
